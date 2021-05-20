@@ -43,12 +43,23 @@ public class NotesModel {
 
         private Integer length;
 
-        public NotesDetails(ArrayList<String> tags, String _id, String content, String author, Integer length) {
+        private boolean isChecked;
+
+        public NotesDetails(ArrayList<String> tags, String _id, String content, String author, Integer length, boolean isChecked) {
             this.tags = tags;
             this._id = _id;
             this.content = content;
             this.author = author;
             this.length = length;
+            this.isChecked = isChecked;
+        }
+
+        public boolean isChecked() {
+            return isChecked;
+        }
+
+        public void setChecked(boolean checked) {
+            isChecked = checked;
         }
 
         public ArrayList<String> getTags() {

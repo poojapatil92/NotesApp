@@ -22,7 +22,7 @@
             android:text="Notes App"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/White"/>
+            android:textColor="@color/toolbar_title_color"/>
 
 
         <ImageView

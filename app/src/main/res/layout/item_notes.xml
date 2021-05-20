@@ -14,7 +14,7 @@
         android:clickable="true"
         android:focusable="true"
         android:checkable="true"
-        card_view:cardBackgroundColor="@color/White"
+        card_view:cardBackgroundColor="@color/card_bg"
         card_view:cardCornerRadius="10dp"
         card_view:cardUseCompatPadding="true">
 
@@ -24,23 +24,23 @@
             android:orientation="vertical"
             android:padding="5dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tags"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="friendship"
-                android:textColor="@color/gray"
+                android:textColor="@color/title_color"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp"/>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/helvetica_neue_m"
             android:text="Friendship is Love without his wings!"
-            android:textColor="@android:color/black"
+            android:textColor="@color/content_textColor"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="- Lord Byron"
-                android:textColor="@color/gray"
+                android:textColor="@color/title_color"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"/>
